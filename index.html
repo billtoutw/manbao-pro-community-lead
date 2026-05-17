@@ -934,6 +934,7 @@
 
       html {
         scroll-behavior: smooth;
+        scroll-padding-top: var(--nav-offset, 72px);
       }
 
       body {
@@ -991,6 +992,7 @@
         width: 1240px;
         height: 1754px;
         margin: 28px auto;
+        scroll-margin-top: var(--nav-offset, 72px);
       }
 
       .page-wrap .sheet {
@@ -1613,12 +1615,20 @@
     </main>
 
     <script>
+      function updateNavOffset() {
+        const nav = document.querySelector(".web-nav");
+        const offset = (nav ? nav.getBoundingClientRect().height : 0) + 12;
+        document.documentElement.style.setProperty("--nav-offset", offset + "px");
+        return offset;
+      }
+
       function fitPages() {
         const baseWidth = 1240;
         const baseHeight = 1754;
         const readingMode = window.matchMedia("(max-width: 720px)").matches;
         const available = Math.max(320, window.innerWidth - 24);
         const scale = Math.min(1, available / baseWidth);
+        updateNavOffset();
 
         document.querySelectorAll(".page-wrap").forEach((wrap) => {
           const sheet = wrap.querySelector(".sheet");
@@ -1636,8 +1646,33 @@
         });
       }
 
+      function scrollToAnchor(hash, behavior = "smooth") {
+        const target = hash ? document.querySelector(hash) : null;
+        if (!target) return;
+        const offset = updateNavOffset();
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: Math.max(0, top), behavior });
+      }
+
+      document.querySelectorAll('.web-nav a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          const hash = link.getAttribute("href");
+          history.pushState(null, "", hash);
+          requestAnimationFrame(() => scrollToAnchor(hash));
+        });
+      });
+
+      window.addEventListener("hashchange", () => {
+        requestAnimationFrame(() => scrollToAnchor(window.location.hash, "auto"));
+      });
       window.addEventListener("resize", fitPages);
-      window.addEventListener("load", fitPages);
+      window.addEventListener("load", () => {
+        fitPages();
+        if (window.location.hash) {
+          setTimeout(() => scrollToAnchor(window.location.hash, "auto"), 60);
+        }
+      });
       fitPages();
     </script>
   </body>
