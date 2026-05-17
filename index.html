@@ -142,12 +142,12 @@
       }
 
       #community-lead .summary {
-        font-size: 19.5px;
-        line-height: 1.58;
+        font-size: 20.5px;
+        line-height: 1.66;
       }
 
       #community-lead .metrics {
-        margin: 24px 0 25px;
+        margin: 25px 0 29px;
       }
 
       #community-lead .metric {
@@ -155,22 +155,22 @@
       }
 
       #community-lead .section {
-        margin-top: 19px;
+        margin-top: 24px;
       }
 
       #community-lead .project {
-        padding: 13px 15px;
+        padding: 17px 19px;
       }
 
       #community-lead .project p,
       #community-lead li {
-        font-size: 15.2px;
-        line-height: 1.42;
+        font-size: 16.2px;
+        line-height: 1.6;
       }
 
       #community-lead .quote {
-        font-size: 16.5px;
-        line-height: 1.45;
+        font-size: 17px;
+        line-height: 1.55;
       }
 
       .answer-page {
@@ -522,9 +522,162 @@
         margin-top: 22px;
       }
 
-      #manbao-answer-2 .answer-card p {
+      #manbao-answer-2:not(.readable) .answer-card p {
         font-size: 14.85px;
         line-height: 1.6;
+      }
+
+      .answer-page.readable {
+        padding-top: 64px;
+      }
+
+      .answer-page.readable .answer-top {
+        grid-template-columns: 1fr 100px;
+      }
+
+      .answer-page.readable .answer-title {
+        font-size: 52px;
+        line-height: 1.12;
+      }
+
+      .answer-page.readable .answer-mark {
+        width: 92px;
+        height: 92px;
+        font-size: 33px;
+      }
+
+      .answer-page.readable .answer-rule {
+        margin: 24px 0 28px;
+      }
+
+      .answer-page.readable .answer-grid,
+      .answer-page.readable .answer-grid.wide-left {
+        grid-template-columns: 1fr 1fr;
+        gap: 42px;
+      }
+
+      .answer-page.readable .answer-section {
+        margin-top: 28px;
+      }
+
+      .answer-page.readable .answer-section h2 {
+        margin-bottom: 12px;
+        font-size: 30px;
+        line-height: 1.25;
+      }
+
+      .answer-page.readable .answer-card {
+        padding: 22px 23px;
+        border-color: color-mix(in srgb, var(--hairline) 78%, var(--accent) 22%);
+        background: rgba(255, 255, 255, 0.76);
+      }
+
+      .answer-page.readable .answer-card h3 {
+        color: #151d29;
+        font-size: 21px;
+        line-height: 1.38;
+      }
+
+      .answer-page.readable .answer-card p {
+        font-size: 18.8px;
+        line-height: 1.7;
+      }
+
+      .answer-page.readable .answer-card p + p {
+        margin-top: 13px;
+      }
+
+      .answer-page.readable .answer-highlight {
+        padding: 20px 22px;
+        font-size: 20px;
+        line-height: 1.65;
+      }
+
+      .answer-page.readable .answer-prompt {
+        margin: 0 0 16px 22px;
+        font-size: 17.8px;
+        line-height: 1.58;
+      }
+
+      .answer-page.readable .answer-step-stack {
+        gap: 16px;
+      }
+
+      .answer-page.readable .indicator-table {
+        margin-bottom: 17px;
+      }
+
+      .answer-page.readable .indicator-table th,
+      .answer-page.readable .indicator-table td {
+        padding: 14px 16px;
+        font-size: 16px;
+        line-height: 1.55;
+      }
+
+      .answer-page.readable .indicator-table th {
+        font-size: 16.5px;
+      }
+
+      #manbao-answer-1 .answer-grid {
+        grid-template-columns: 1.03fr 0.97fr;
+      }
+
+      #manbao-answer-2 .answer-grid {
+        grid-template-columns: 0.95fr 1.05fr;
+      }
+
+      #manbao-answer-3 .answer-grid {
+        grid-template-columns: 1.03fr 0.97fr;
+        gap: 40px;
+      }
+
+      #manbao-answer-3 {
+        padding-top: 58px;
+      }
+
+      #manbao-answer-3 .answer-title {
+        font-size: 48px;
+      }
+
+      #manbao-answer-3 .answer-rule {
+        margin: 22px 0 22px;
+      }
+
+      #manbao-answer-3 .answer-section {
+        margin-top: 22px;
+      }
+
+      #manbao-answer-3 .answer-section h2 {
+        margin-bottom: 8px;
+        font-size: 25px;
+      }
+
+      #manbao-answer-3 .answer-card {
+        padding: 17px 18px;
+      }
+
+      #manbao-answer-3 .answer-card h3 {
+        margin-bottom: 6px;
+        font-size: 19px;
+      }
+
+      #manbao-answer-3 .answer-card p {
+        font-size: 16.6px;
+        line-height: 1.6;
+      }
+
+      #manbao-answer-3 .answer-card p + p {
+        margin-top: 8px;
+      }
+
+      #manbao-answer-3 .answer-step-stack {
+        gap: 12px;
+      }
+
+      #manbao-answer-3 .indicator-table th,
+      #manbao-answer-3 .indicator-table td {
+        padding: 12px 14px;
+        font-size: 16px;
       }
 
       .cv-ai {
@@ -1006,7 +1159,8 @@
         .compact .project p,
         .answer-card p,
         .answer-page.exact .answer-card p,
-        #manbao-answer-2 .answer-card p {
+        #manbao-answer-2 .answer-card p,
+        #manbao-answer-3 .answer-card p {
           font-size: 16px;
           line-height: 1.68;
         }
@@ -1141,6 +1295,7 @@
         <a href="#cv">CV</a>
         <a href="#answer-1">答覆頁 1</a>
         <a href="#answer-2">答覆頁 2</a>
+        <a href="#answer-3">答覆頁 3</a>
       </nav>
     </header>
 
@@ -1263,18 +1418,18 @@
 </div>
 
 <div class="page-wrap" id="answer-1">
-<section id="manbao-answer-1" class="sheet answer-page exact">
+<section id="manbao-answer-1" class="sheet answer-page exact readable">
       <header class="answer-top">
         <div>
           <div class="answer-kicker">《曼報 Pro》社群負責人</div>
-          <h1 class="answer-title">經驗、動機與社群觀察</h1>
+          <h1 class="answer-title">經驗與動機</h1>
         </div>
         <div class="answer-mark">01</div>
       </header>
 
       <div class="answer-rule"></div>
 
-      <div class="answer-grid wide-left">
+      <div class="answer-grid">
         <div>
           <section class="answer-section">
             <h2>你的經驗。</h2>
@@ -1290,6 +1445,9 @@
             </article>
           </section>
 
+        </div>
+
+        <div>
           <section class="answer-section">
             <h2>你的動機。</h2>
             <p class="answer-prompt">你為什麼想做這件事，以及你對這個角色最想問我的一個問題。</p>
@@ -1302,7 +1460,28 @@
             </article>
           </section>
         </div>
+      </div>
 
+      <footer class="footer">
+        <span>竇孝文｜《曼報 Pro》社群負責人</span>
+        <span>01 / 03</span>
+      </footer>
+    </section>
+</div>
+
+<div class="page-wrap" id="answer-2">
+<section id="manbao-answer-2" class="sheet answer-page exact readable">
+      <header class="answer-top">
+        <div>
+          <div class="answer-kicker">《曼報 Pro》社群負責人</div>
+          <h1 class="answer-title">提問與社群觀察</h1>
+        </div>
+        <div class="answer-mark">02</div>
+      </header>
+
+      <div class="answer-rule"></div>
+
+      <div class="answer-grid">
         <div>
           <section class="answer-section">
             <h2>我最想問 Manny 的一個問題是：</h2>
@@ -1313,6 +1492,9 @@
             </article>
           </section>
 
+        </div>
+
+        <div>
           <section class="answer-section">
             <h2>你的觀察。</h2>
             <p class="answer-prompt">一個你認為做得好的線上社群（國內外都可以），以及它好在哪裡。</p>
@@ -1328,19 +1510,19 @@
 
       <footer class="footer">
         <span>竇孝文｜《曼報 Pro》社群負責人</span>
-        <span>01 / 02</span>
+        <span>02 / 03</span>
       </footer>
     </section>
 </div>
 
-<div class="page-wrap" id="answer-2">
-<section id="manbao-answer-2" class="sheet answer-page exact">
+<div class="page-wrap" id="answer-3">
+<section id="manbao-answer-3" class="sheet answer-page exact readable">
       <header class="answer-top">
         <div>
           <div class="answer-kicker">《曼報 Pro》社群負責人</div>
           <h1 class="answer-title">你的思考</h1>
         </div>
-        <div class="answer-mark">02</div>
+        <div class="answer-mark">03</div>
       </header>
 
       <div class="answer-rule"></div>
@@ -1409,7 +1591,7 @@
               <p>三個月後，我會先用第一批 50 至 100 位核心訂戶來判斷社群是否成功，而成功指標有以下三個：</p>
               <p>第一，社群啟動 14 天內，至少 60% 的核心訂戶完成一次有效參與，例如自我介紹、提出問題、回覆討論或參與活動。</p>
               <p>第二，最近四週內，至少 40% 核心訂戶有兩週以上的有效參與，代表社群開始形成回訪習慣。</p>
-              <p>第三，核心訂戶滿意度平均 4 分以上（滿分 5 分），其中至少有 60% 的表示願意持續回來參與，或認為這個社群提高了他們對《曼報 Pro》的續訂意願。</p>
+              <p>第三，核心訂戶滿意度平均 4 分以上（滿分 5 分），其中至少有 60% 的表示願意持續回來參與。</p>
             </article>
           </section>
         </div>
@@ -1417,7 +1599,7 @@
 
       <footer class="footer">
         <span>竇孝文｜《曼報 Pro》社群負責人</span>
-        <span>02 / 02</span>
+        <span>03 / 03</span>
       </footer>
     </section>
 </div>
