@@ -1,0 +1,1200 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>竇孝文｜《曼報 Pro》社群負責人</title>
+    <style>
+
+      :root {
+        --paper: #fbfaf7;
+        --ink: #18202b;
+        --muted: #5e6673;
+        --hairline: #d9dee6;
+        --soft: #eef2f6;
+        --navy: #1f3657;
+        --gold: #b88a2f;
+        --red: #ad343e;
+        --green: #23624b;
+        --cyan: #077c95;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #d8dce2;
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Segoe UI", sans-serif;
+      }
+
+      .sheet {
+        position: relative;
+        width: 1240px;
+        height: 1754px;
+        overflow: hidden;
+        margin: 32px auto;
+        padding: 68px 74px 64px;
+        background: var(--paper);
+        box-shadow: 0 20px 60px rgba(18, 29, 46, 0.18);
+      }
+
+      .sheet::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 18px;
+        background: var(--accent);
+      }
+
+      .sheet::after {
+        content: "";
+        position: absolute;
+        right: -180px;
+        top: -180px;
+        width: 420px;
+        height: 420px;
+        border-radius: 50%;
+        background: color-mix(in srgb, var(--accent) 10%, transparent);
+      }
+
+      .cv-main {
+        --accent: var(--navy);
+        --accent-2: var(--gold);
+      }
+
+      #main-cv .top {
+        align-items: center;
+        gap: 40px;
+      }
+
+      #main-cv h1 {
+        font-size: 66px;
+        line-height: 1;
+      }
+
+      #main-cv .nickname {
+        color: #263348;
+        font-size: 0.72em;
+        font-weight: 760;
+      }
+
+      #main-cv .role {
+        margin-top: 22px;
+        font-size: 29px;
+        transform: translateY(12px);
+      }
+
+      #main-cv .rule {
+        margin: 32px 0 24px;
+      }
+
+      #main-cv .footer {
+        justify-content: flex-end;
+      }
+
+      .cv-brand {
+        --accent: var(--red);
+        --accent-2: #d29b3d;
+      }
+
+      .cv-content {
+        --accent: var(--green);
+        --accent-2: #c08a2d;
+      }
+
+      .cv-community {
+        --accent: #245d54;
+        --accent-2: var(--gold);
+      }
+
+      #community-lead .role {
+        max-width: 760px;
+      }
+
+      #community-lead .top {
+        align-items: center;
+        gap: 40px;
+      }
+
+      #community-lead h1 {
+        font-size: 66px;
+        line-height: 1;
+      }
+
+      #community-lead .nickname {
+        color: #263348;
+        font-size: 0.72em;
+        font-weight: 760;
+      }
+
+      #community-lead .role {
+        margin-top: 22px;
+        font-size: 29px;
+        transform: translateY(12px);
+      }
+
+      #community-lead .rule {
+        margin: 32px 0 24px;
+      }
+
+      #community-lead .summary {
+        font-size: 19.5px;
+        line-height: 1.58;
+      }
+
+      #community-lead .metrics {
+        margin: 24px 0 25px;
+      }
+
+      #community-lead .metric {
+        min-height: 112px;
+      }
+
+      #community-lead .section {
+        margin-top: 19px;
+      }
+
+      #community-lead .project {
+        padding: 13px 15px;
+      }
+
+      #community-lead .project p,
+      #community-lead li {
+        font-size: 15.2px;
+        line-height: 1.42;
+      }
+
+      #community-lead .quote {
+        font-size: 16.5px;
+        line-height: 1.45;
+      }
+
+      .answer-page {
+        --accent: #245d54;
+        --accent-2: var(--gold);
+        padding-top: 64px;
+      }
+
+      .answer-top {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr 120px;
+        gap: 32px;
+        align-items: end;
+      }
+
+      .answer-kicker {
+        color: var(--accent);
+        font-size: 22px;
+        font-weight: 780;
+        margin-bottom: 12px;
+      }
+
+      .answer-title {
+        margin: 0;
+        color: #101722;
+        font-size: 50px;
+        line-height: 1.12;
+      }
+
+      .answer-subtitle {
+        margin-top: 16px;
+        color: #3e4858;
+        font-size: 18px;
+        font-weight: 680;
+      }
+
+      .answer-mark {
+        display: grid;
+        place-items: center;
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+        border: 2px solid color-mix(in srgb, var(--accent) 35%, #d7dde6);
+        background: #fff;
+        color: var(--accent);
+        font-size: 38px;
+        font-weight: 850;
+      }
+
+      .answer-rule {
+        height: 2px;
+        margin: 28px 0 24px;
+        background: linear-gradient(90deg, var(--accent), rgba(0, 0, 0, 0));
+      }
+
+      .answer-grid {
+        display: grid;
+        grid-template-columns: 1.06fr 0.94fr;
+        gap: 30px;
+        align-items: start;
+      }
+
+      .answer-grid.wide-left {
+        grid-template-columns: 1.12fr 0.88fr;
+      }
+
+      .answer-section {
+        margin-top: 22px;
+      }
+
+      .answer-section:first-child {
+        margin-top: 0;
+      }
+
+      .answer-section h2 {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 13px;
+        color: #101722;
+        font-size: 25px;
+        font-weight: 850;
+        line-height: 1.2;
+      }
+
+      .answer-section h2::before {
+        content: "";
+        width: 10px;
+        height: 28px;
+        background: var(--accent);
+      }
+
+      .answer-card {
+        padding: 16px 17px;
+        border: 1px solid var(--hairline);
+        background: #fff;
+      }
+
+      .answer-card + .answer-card {
+        margin-top: 12px;
+      }
+
+      .answer-card h3 {
+        margin: 0 0 8px;
+        color: var(--accent);
+        font-size: 20px;
+        line-height: 1.25;
+      }
+
+      .answer-card p {
+        margin: 0;
+        color: #2d3747;
+        font-size: 16.2px;
+        line-height: 1.58;
+      }
+
+      .answer-card p + p {
+        margin-top: 8px;
+      }
+
+      .answer-highlight {
+        padding: 17px 18px;
+        border-left: 5px solid var(--accent-2);
+        background: #fff;
+        color: #242d3a;
+        font-size: 17px;
+        line-height: 1.56;
+        font-weight: 680;
+      }
+
+      .answer-metrics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 11px;
+        margin: 0 0 14px;
+      }
+
+      .answer-metric {
+        min-height: 92px;
+        padding: 13px 12px;
+        border: 1px solid var(--hairline);
+        background: #fff;
+      }
+
+      .answer-metric strong {
+        display: block;
+        color: var(--accent);
+        font-size: 29px;
+        line-height: 1;
+      }
+
+      .answer-metric span {
+        display: block;
+        margin-top: 8px;
+        color: #303b4a;
+        font-size: 13.5px;
+        line-height: 1.34;
+        font-weight: 680;
+      }
+
+      .answer-list {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .answer-list li {
+        margin: 7px 0;
+        color: #2d3747;
+        font-size: 16px;
+        line-height: 1.54;
+      }
+
+      .step-card {
+        display: grid;
+        grid-template-columns: 64px 1fr;
+        gap: 13px;
+        padding: 15px 16px;
+        border: 1px solid var(--hairline);
+        background: #fff;
+      }
+
+      .step-card + .step-card {
+        margin-top: 12px;
+      }
+
+      .step-num {
+        color: var(--accent);
+        font-size: 34px;
+        line-height: 1;
+        font-weight: 850;
+      }
+
+      .step-card h3 {
+        margin: 0 0 7px;
+        color: #151d29;
+        font-size: 19px;
+        line-height: 1.25;
+      }
+
+      .step-card p {
+        margin: 0;
+        color: #2d3747;
+        font-size: 15.8px;
+        line-height: 1.52;
+      }
+
+      .answer-page.exact {
+        padding-top: 62px;
+      }
+
+      .answer-page.exact .answer-top {
+        grid-template-columns: 1fr 104px;
+      }
+
+      .answer-page.exact .answer-kicker {
+        font-size: 21px;
+        margin-bottom: 10px;
+      }
+
+      .answer-page.exact .answer-title {
+        font-size: 46px;
+      }
+
+      .answer-page.exact .answer-mark {
+        width: 94px;
+        height: 94px;
+        font-size: 34px;
+      }
+
+      .answer-page.exact .answer-rule {
+        margin: 25px 0 26px;
+      }
+
+      .answer-page.exact .answer-grid,
+      .answer-page.exact .answer-grid.wide-left {
+        grid-template-columns: 1.02fr 0.98fr;
+        gap: 34px;
+      }
+
+      .answer-page.exact .answer-section {
+        margin-top: 24px;
+      }
+
+      .answer-page.exact .answer-section h2 {
+        margin-bottom: 8px;
+        font-size: 24px;
+        letter-spacing: 0;
+      }
+
+      .answer-page.exact .answer-section h2::before {
+        height: 27px;
+        flex: 0 0 auto;
+      }
+
+      .answer-page.exact .answer-card {
+        padding: 17px 18px;
+        border-color: color-mix(in srgb, var(--hairline) 86%, var(--accent) 14%);
+      }
+
+      .answer-page.exact .answer-card h3 {
+        color: #151d29;
+        font-size: 18.4px;
+        line-height: 1.35;
+      }
+
+      .answer-page.exact .answer-card p {
+        font-size: 15.1px;
+        line-height: 1.64;
+      }
+
+      .answer-page.exact .answer-card p + p {
+        margin-top: 10px;
+      }
+
+      .answer-page.exact .answer-highlight {
+        padding: 17px 18px;
+        font-size: 16px;
+        line-height: 1.58;
+      }
+
+      .answer-step-stack {
+        display: grid;
+        gap: 14px;
+      }
+
+      .answer-page.exact .answer-step-stack .answer-card + .answer-card {
+        margin-top: 0;
+      }
+
+      .answer-prompt {
+        margin: 0 0 13px 22px;
+        color: #495466;
+        font-size: 15.6px;
+        line-height: 1.5;
+        font-weight: 650;
+      }
+
+      .answer-page.exact .answer-section > .answer-card,
+      .answer-page.exact .answer-section > .answer-highlight,
+      .answer-page.exact .answer-step-stack {
+        margin-top: 0;
+      }
+
+      .answer-question {
+        margin-top: 18px !important;
+      }
+
+      .indicator-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin: 0 0 14px;
+        border: 1px solid color-mix(in srgb, var(--hairline) 82%, var(--accent) 18%);
+        background: #fff;
+        color: #243044;
+      }
+
+      .indicator-table th,
+      .indicator-table td {
+        border-bottom: 1px solid color-mix(in srgb, var(--hairline) 84%, var(--accent) 16%);
+        padding: 12px 14px;
+        text-align: left;
+        vertical-align: top;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      .indicator-table th {
+        background: color-mix(in srgb, var(--accent) 8%, #fff);
+        color: var(--accent);
+        font-size: 16px;
+        font-weight: 850;
+      }
+
+      .indicator-table td:first-child {
+        width: 35%;
+        color: #151d29;
+        font-weight: 820;
+        background: color-mix(in srgb, var(--accent) 3%, #fff);
+      }
+
+      .indicator-table tr:last-child td {
+        border-bottom: 0;
+      }
+
+      #manbao-answer-2 .answer-section {
+        margin-top: 22px;
+      }
+
+      #manbao-answer-2 .answer-card p {
+        font-size: 14.85px;
+        line-height: 1.6;
+      }
+
+      .cv-ai {
+        --accent: var(--cyan);
+        --accent-2: #2f5673;
+      }
+
+      .top {
+        display: grid;
+        grid-template-columns: 1fr 190px;
+        gap: 32px;
+        align-items: start;
+        position: relative;
+        z-index: 1;
+      }
+
+      .eyebrow {
+        color: var(--accent);
+        font-size: 21px;
+        font-weight: 750;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        margin: 0;
+        color: #101722;
+        font-size: 58px;
+        line-height: 1.02;
+        letter-spacing: 0;
+      }
+
+      .role {
+        margin-top: 16px;
+        color: #263348;
+        font-size: 27px;
+        font-weight: 720;
+        line-height: 1.34;
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        margin-top: 18px;
+        color: var(--muted);
+        font-size: 17px;
+      }
+
+      .photo {
+        width: 176px;
+        height: 176px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 50% 19%;
+        border: 7px solid #fff;
+        box-shadow: 0 12px 30px rgba(20, 30, 46, 0.2);
+      }
+
+      .photo-circle {
+        width: 206px;
+        height: 206px;
+        object-fit: contain;
+      }
+
+      .rule {
+        height: 2px;
+        margin: 30px 0 24px;
+        background: linear-gradient(90deg, var(--accent), rgba(0, 0, 0, 0));
+      }
+
+      .summary {
+        color: #26303d;
+        font-size: 21px;
+        line-height: 1.62;
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin: 26px 0 28px;
+      }
+
+      .metric {
+        min-height: 118px;
+        padding: 16px 16px 14px;
+        border: 1px solid var(--hairline);
+        background: #fff;
+      }
+
+      .metric strong {
+        display: block;
+        color: var(--accent);
+        font-size: 36px;
+        line-height: 1;
+      }
+
+      .metric span {
+        display: block;
+        margin-top: 9px;
+        color: #303b4a;
+        font-size: 16px;
+        line-height: 1.38;
+        font-weight: 650;
+      }
+
+      .main-grid {
+        display: grid;
+        grid-template-columns: 1.02fr 0.98fr;
+        gap: 30px;
+        align-items: start;
+      }
+
+      .section {
+        margin-top: 24px;
+      }
+
+      .section:first-child {
+        margin-top: 0;
+      }
+
+      .section-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 13px;
+        color: #101722;
+        font-size: 25px;
+        font-weight: 850;
+        line-height: 1.2;
+      }
+
+      .section-title::before {
+        content: "";
+        width: 10px;
+        height: 28px;
+        background: var(--accent);
+      }
+
+      .timeline {
+        display: grid;
+        gap: 13px;
+      }
+
+      .job {
+        padding: 14px 0 14px 18px;
+        border-left: 3px solid color-mix(in srgb, var(--accent) 45%, #d7dde6);
+      }
+
+      .job h3 {
+        margin: 0;
+        color: #151d29;
+        font-size: 20px;
+        line-height: 1.22;
+      }
+
+      .meta {
+        margin-top: 4px;
+        color: var(--accent);
+        font-size: 15px;
+        font-weight: 760;
+      }
+
+      ul {
+        margin: 8px 0 0;
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 5px 0;
+        color: #2d3747;
+        font-size: 16px;
+        line-height: 1.44;
+      }
+
+      .project-list {
+        display: grid;
+        gap: 13px;
+      }
+
+      .project {
+        padding: 15px 16px;
+        border: 1px solid var(--hairline);
+        background: #fff;
+      }
+
+      .project h3 {
+        margin: 0 0 7px;
+        color: var(--accent);
+        font-size: 19px;
+        line-height: 1.24;
+      }
+
+      .project p {
+        margin: 0;
+        color: #313b4b;
+        font-size: 16px;
+        line-height: 1.46;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .chip {
+        padding: 8px 11px;
+        border: 1px solid color-mix(in srgb, var(--accent) 24%, #d8dde6);
+        background: color-mix(in srgb, var(--accent) 6%, #fff);
+        color: #243044;
+        font-size: 15px;
+        font-weight: 680;
+      }
+
+      .quote {
+        margin-top: 16px;
+        padding: 17px 18px;
+        border-left: 5px solid var(--accent-2);
+        background: #fff;
+        color: #242d3a;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 650;
+      }
+
+      .footer {
+        position: absolute;
+        left: 74px;
+        right: 74px;
+        bottom: 36px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid var(--hairline);
+        padding-top: 14px;
+        color: #747c88;
+        font-size: 14px;
+      }
+
+      .compact .summary {
+        font-size: 20px;
+      }
+
+      .compact li,
+      .compact .project p {
+        font-size: 15.5px;
+      }
+
+      .compact .section {
+        margin-top: 20px;
+      }
+    
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: #e3e6ea;
+      }
+
+      .web-nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 14px 24px;
+        border-bottom: 1px solid rgba(36, 93, 84, 0.16);
+        background: rgba(251, 250, 247, 0.94);
+        backdrop-filter: blur(14px);
+        color: #18202b;
+        font-size: 15px;
+      }
+
+      .web-nav strong {
+        color: #245d54;
+        font-size: 16px;
+      }
+
+      .web-nav nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: flex-end;
+      }
+
+      .web-nav a {
+        padding: 7px 10px;
+        border: 1px solid rgba(36, 93, 84, 0.22);
+        color: #243044;
+        text-decoration: none;
+        font-weight: 680;
+      }
+
+      .web-nav a:hover {
+        border-color: rgba(36, 93, 84, 0.52);
+        color: #245d54;
+      }
+
+      .site-pages {
+        padding: 22px 0 54px;
+      }
+
+      .page-wrap {
+        position: relative;
+        width: 1240px;
+        height: 1754px;
+        margin: 28px auto;
+      }
+
+      .page-wrap .sheet {
+        margin: 0;
+        transform-origin: top left;
+      }
+
+      @media (max-width: 720px) {
+        .web-nav {
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 12px 14px;
+        }
+
+        .web-nav nav {
+          justify-content: flex-start;
+        }
+
+        .site-pages {
+          padding-top: 10px;
+        }
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .web-nav {
+          display: none;
+        }
+
+        .site-pages {
+          padding: 0;
+        }
+
+        .page-wrap {
+          width: 1240px !important;
+          height: 1754px !important;
+          margin: 0;
+          break-after: page;
+        }
+
+        .page-wrap .sheet {
+          box-shadow: none;
+          transform: none !important;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="web-nav">
+      <strong>竇孝文 Hsiao-Wen Tou｜《曼報 Pro》社群負責人</strong>
+      <nav aria-label="頁面導覽">
+        <a href="#cv">CV</a>
+        <a href="#answer-1">答覆頁 1</a>
+        <a href="#answer-2">答覆頁 2</a>
+      </nav>
+    </header>
+
+    <main class="site-pages">
+<div class="page-wrap" id="cv">
+<section id="community-lead" class="sheet cv-community compact">
+      <header class="top">
+        <div>
+          <h1>竇孝文<span class="nickname">（Bill）</span></h1>
+          <div class="role">社群成長｜內容行銷｜活動與會員經營</div>
+        </div>
+        <img class="photo-circle" src="bill_photo_circle.png" alt="Bill Tou" />
+      </header>
+
+      <div class="rule"></div>
+      <p class="summary">
+        8+ 年數位媒體、社群成長與內容行銷經驗，長期在 TNL Mediagene 操作多平台社群、重大事件與品牌專案。擅長把內容判斷、平台語感、活動設計、數據追蹤與跨部門協作整合成能帶動參與的社群成長節奏。
+      </p>
+
+      <div class="metrics">
+        <div class="metric"><strong>8+</strong><span>年媒體社群與品牌行銷經驗</span></div>
+        <div class="metric"><strong>6</strong><span>個媒體品牌社群經營</span></div>
+        <div class="metric"><strong>16</strong><span>次重大事件社群操盤</span></div>
+        <div class="metric"><strong>1,000+</strong><span>INSIDE POSSIBLE 兩年累計參與人數</span></div>
+      </div>
+
+      <div class="main-grid">
+        <div>
+          <section class="section">
+            <h2 class="section-title">核心優勢</h2>
+            <div class="project-list">
+              <article class="project">
+                <h3>社群冷啟動與參與設計</h3>
+                <p>能從使用者動機、參與門檻、互動節奏與活動形式切入，協助社群從小規模核心族群開始累積動能。</p>
+              </article>
+              <article class="project">
+                <h3>內容社群與平台語感</h3>
+                <p>熟悉 Facebook、Instagram、Threads、X、LINE、批踢踢、Dcard 等平台文化，能依場域調整語氣與互動方式。</p>
+              </article>
+              <article class="project">
+                <h3>跨部門專案推進</h3>
+                <p>具備大型內容專案 PM 經驗，能整合編輯、設計、影音、行銷資源，將社群策略落成可執行流程。</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">證明案例</h2>
+            <div class="project-list">
+              <article class="project">
+                <h3>INSIDE POSSIBLE 從零開始</h3>
+                <p>參與品牌活動與社群專案從零建立，兩年累計參與人數突破 1,000 人，累積活動設計與使用者參與經驗。</p>
+              </article>
+              <article class="project">
+                <h3>2024 美國大選直播專案</h3>
+                <p>擔任 PM 協調編輯、設計、影音、行銷 4 部門，完成即時直播與社群推廣，YouTube 觀看達 20 萬。</p>
+              </article>
+              <article class="project">
+                <h3>破圈社群長文</h3>
+                <p>策劃 5+ 篇觸及超越粉專基礎的長文，單篇曾達 7,000+ 讚、800+ 分享。</p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div>
+          <section class="section">
+            <h2 class="section-title">核心能力</h2>
+            <div class="chips">
+              <span class="chip">社群成長</span>
+              <span class="chip">活動社群</span>
+              <span class="chip">內容策展</span>
+              <span class="chip">平台經營</span>
+              <span class="chip">會員經營</span>
+              <span class="chip">GA4</span>
+              <span class="chip">Meta Ads</span>
+              <span class="chip">AI Workflow</span>
+              <span class="chip">跨部門 PM</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">工作經歷</h2>
+            <ul>
+              <li>2025.04-Present｜品牌行銷副總監</li>
+              <li>2024.03-2025.03｜品牌行銷主任</li>
+              <li>2021.09-2024.03｜資深社群行銷專員</li>
+              <li>2017.09-2021.09｜社群行銷專員</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">學歷與證照</h2>
+            <ul>
+              <li>國立政治大學｜中國文學系學士</li>
+              <li>TOEIC 875｜英文高級</li>
+              <li>Google Project Management Professional Certificate</li>
+              <li>Career Essentials in Generative AI｜Gemini Certified Educator</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">聯絡方式</h2>
+            <ul>
+              <li>電話：0930-564-175</li>
+              <li>信箱：billtoutw@gmail.com</li>
+              <li>LinkedIn：linkedin.com/in/billtou</li>
+              <li>何立雪｜政經時事、科技專欄：thenewslens.com/author/StandSnow</li>
+              <li>半個比爾｜影評專欄：thenewslens.com/author/billtoutw</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span>竇孝文 Hsiao-Wen Tou｜《曼報 Pro》社群負責人</span>
+        <span></span>
+      </footer>
+    </section>
+</div>
+
+<div class="page-wrap" id="answer-1">
+<section id="manbao-answer-1" class="sheet answer-page exact">
+      <header class="answer-top">
+        <div>
+          <div class="answer-kicker">《曼報 Pro》社群負責人</div>
+          <h1 class="answer-title">經驗、動機與社群觀察</h1>
+        </div>
+        <div class="answer-mark">01</div>
+      </header>
+
+      <div class="answer-rule"></div>
+
+      <div class="answer-grid wide-left">
+        <div>
+          <section class="answer-section">
+            <h2>你的經驗。</h2>
+            <p class="answer-prompt">具體講你做過什麼跟社群相關的事，以及遇到什麼問題、怎麼處理。不一定需要用履歷格式，用你覺得最清楚的方式寫就好。</p>
+            <article class="answer-card">
+              <p>我曾在過去兩年，和同事一起打造「 INSIDE POSSIBLE」（又稱硬塞小聚）付費線下聚會。活動票價介在 299 至 499 元。頻率為每月一場，人數約 50 人。</p>
+              <p>在硬塞小聚，我主要負責主題定位、售票文案、受眾判斷、社群推廣與廣告投放。這活動在我接手主管職位後，幾乎場場完售；但在剛開始第一年，門票銷售並不如預期，常出現 50 張只賣掉 25 張的情況。</p>
+              <p>這個活動在我接手主管的職位後，幾乎是場場完售。但在剛開始的第一年，門票銷售卻不如預期，時常出現 50 張只賣掉 25 張的情況。</p>
+              <p>後來我和團隊一起回頭檢討，發現原本只以 AI 話題吸引人購票，無法完整回應讀者需求。真正願意付費前來聚會的讀者，更在意 AI 技術能為他們的職涯、工作方法與產業理解帶來哪些實質改變。</p>
+              <p>理解這點後，我們將主題方向從泛泛的 AI 趨勢，調整為「AI × 產業或技能」，例如「AI × 設計」、「AI × 知識管理」、「AI × Vibe Coding」等。主題方向改變後，硬塞小聚達到幾乎場場完售的盛況，</p>
+              <p>理解這點後，我們將原先主題方向從新潮 AI 話題改為「AI X 產業或技能」的結合，如「AI X 設計」、「AI X 知識管理」、「AI X Vibe Coding」等。主題方向改變後，硬塞小聚就達到幾乎場場完售的盛況，</p>
+              <p>這個經驗讓我學到：付費社群或付費活動的核心，在於理解願意付費的受眾真正想解決什麼問題，並把主題、文案、場景與互動設計都轉向聚焦受眾的需求。</p>
+            </article>
+          </section>
+
+          <section class="answer-section">
+            <h2>你的動機。</h2>
+            <p class="answer-prompt">你為什麼想做這件事，以及你對這個角色最想問我的一個問題。</p>
+            <article class="answer-card">
+              <p>我會想為《曼報 Pro》做社群，主要原因是我自己也是《曼報 Pro》的訂戶。但平常想要和團隊成員互動，只有每月一次的實體見面會才有辦法做到，可是名額又很難抽，就覺得很可惜。</p>
+              <p>我相信有同樣想法的訂戶，應該不只我一個。如果平常也有一個線上社群可以和團隊成員互相討論、激盪出不同的火花，相信會讓訂戶更有收穫。不然平常我有時候看著《曼報 Pro》的內容，如果有疑問或是想法有不同的地方，也只能上網 Google，或是問 AI，卻沒辦法了解團隊成員寫作和研究背後的真實想法。</p>
+              <p>很多時候，我讀完《曼報 Pro》的內容後，會產生些許疑問、延伸想法，甚至是不同意的地方。但目前我能做的，大多是自己上網查資料、問 AI，沒辦法知道團隊成員寫作與研究背後的真實想法，也很難和其他訂戶互相交流。</p>
+              <p>如果平常能有一個線上社群，可以讓訂戶、團隊成員在合適的平台討論，這應該會讓《曼報 Pro》的內容價值被進一步延伸，成為訂戶之間討論、提問、反思與連結的核心。</p>
+              <p>再加上，我自己在關鍵評論網工作了8年以上的時間，長期從事社群行銷、內容包裝、受眾判斷與專案推動。今天《曼報 Pro》開出社群負責人的職缺，對我來說是個很難得的機會：一方面能解決自己作為訂戶感受到的痛點，另一方面也剛好能發揮過去累積的社群與內容經驗。</p>
+            </article>
+          </section>
+        </div>
+
+        <div>
+          <section class="answer-section">
+            <h2>我最想問 Manny 的一個問題是：</h2>
+            <div class="answer-highlight">如果這個社群在前三個月只能先解決一個問題，你會希望它優先服務「會員留存」、「吸引新訂戶」，還是「讓既有會員之間產生高品質連結」？</div>
+            <article class="answer-card">
+              <p>因為我理解《曼報 Pro》目前已有一萬名付費會員，一開始就要滿足所有訂戶並不實際。社群可以先從 100 人、200 人的小型核心訂戶開始，也可以逐步擴大到 2,000 人、3,000 人，但不同目標會對應到完全不同的社群設計、平台選擇、互動節奏與成功指標。</p>
+              <p>我最想先釐清的，是《曼報 Pro》團隊現階段最希望這個社群優先完成的任務。</p>
+            </article>
+          </section>
+
+          <section class="answer-section">
+            <h2>你的觀察。</h2>
+            <p class="answer-prompt">一個你認為做得好的線上社群（國內外都可以），以及它好在哪裡。</p>
+            <article class="answer-card">
+              <p>我認為謝孟恭在 Telegram 建立的社群是個很好的案例。</p>
+              <p>原因在於他只建構出基本規則，剩下就交給群友自行討論。但他也沒有刻意宣傳，只有將 Telegram 社群連結放在節目資訊欄，避免大量散戶或是他慣稱的「快樂寶貝」一窩蜂進入社群。</p>
+              <p>節目初期，他會在 Telegram 參與討論。等到人數越來越多，討論風氣形塑起來，他就挑選平常活躍且熟悉該 Telegram 社群文化的人擔任管理員，接著就放任社群環境自行生成，而該社群也活躍至今。</p>
+              <p>這個案例好的地方在於，討論風氣良好的社群不見得一開始就要追求最大規模，而是要先讓對的人進來，建立討論風氣，再讓成員自己長出秩序。</p>
+            </article>
+          </section>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span>竇孝文 Hsiao-Wen Tou｜《曼報 Pro》社群負責人</span>
+        <span>01 / 02</span>
+      </footer>
+    </section>
+</div>
+
+<div class="page-wrap" id="answer-2">
+<section id="manbao-answer-2" class="sheet answer-page exact">
+      <header class="answer-top">
+        <div>
+          <div class="answer-kicker">《曼報 Pro》社群負責人</div>
+          <h1 class="answer-title">你的思考</h1>
+        </div>
+        <div class="answer-mark">02</div>
+      </header>
+
+      <div class="answer-rule"></div>
+
+      <div class="answer-grid">
+        <div>
+          <section class="answer-section">
+            <h2>你的思考。</h2>
+            <p class="answer-prompt">三個問題，都沒有標準答案，我想看的是你怎麼想。</p>
+            <h2 class="answer-question">1. 就你對《曼報 Pro》的了解，它的社群跟一個免費的興趣社群，在經營上最關鍵的差異是什麼？</h2>
+            <article class="answer-card">
+              <p>最關鍵的差異是免費興趣社群通常可以先追求熱鬧與參與感，但《曼報 Pro》訂戶社群，必須先追求高品質與時間報酬率。</p>
+              <p>《曼報 Pro》訂戶願意為深度商業內容投入明顯高於一般內容產品的預算與時間，因此他們對討論品質、資訊密度與成員組成的期待也會更高。對他們來說，加入社群是真的希望能「帶走東西」，更進一步獲得文章之外的延伸價值，像是《曼報 Pro》團隊成員的補充，以及其他訂戶的經驗分享。</p>
+              <p>因此，在經營社群上不能只是開一個社群放給他自生自滅。社群最開始需要由《曼報 Pro》團隊成員引導第一批訂戶加入甚至是開啟話題，這樣才不會讓訂戶覺得自己又加入一個沒有用的社群，看著社群軟體的紅點數字越來越多，卻越來越沒有動力點開社群查看裡面討論的話題。</p>
+            </article>
+          </section>
+
+          <section class="answer-section">
+            <h2>2. 如果你現在就要替《曼報 Pro》啟動社群，你的前三步是什麼？</h2>
+            <div class="answer-step-stack">
+              <article class="answer-card">
+                <h3>第一步，先做會員需求調查與深度訪談</h3>
+                <p>問卷調查可以幫助《曼報 Pro》團隊快速掌握大方向，例如訂戶期待的社群平台、參與形式、願意投入的時間，以及他們對《曼報 Pro》內容最常產生疑問或想延伸討論的地方。</p>
+                <p>因此我會再挑選 10 至 15 位忠實鐵粉（有參加過線下聚會的優先）做深度訪談，了解他們真正想從社群裡得到什麼，以及他們為什麼願意花時間參與。</p>
+              </article>
+              <article class="answer-card">
+                <h3>第二步，根據調查結果與訪談回饋，設計初版社群架構</h3>
+                <p>有了問卷調查結果和鐵粉訪談回饋，我會先設計初版架構，擬定清楚的社群規則、討論主題、每週固定節奏，以及適合團隊成員參與的互動方式。</p>
+              </article>
+              <article class="answer-card">
+                <h3>第三步，邀請 50 至 100 人成為社群初始核心成員，並開始驗證假設、快速迭代</h3>
+                <p>一開始，我會先邀請 50 至 100 位忠實鐵粉成為社群的初始核心成員。這批人不只是早期使用者，更像是共同參與社群塑形的人。</p>
+                <p>像是每週選一篇《曼報 Pro》文章，設計 2 至 3 個延伸問題，由團隊成員先拋出觀點，再邀請會員從自身產業或經驗回應。重點是必須先找到一個能穩定創造高品質討論的最小單位，再快速迭代。</p>
+                <p>而每次迭代都要有明確假設。例如：我們想驗證訂戶是否願意回應延伸問題、是否願意分享自己的產業經驗、是否願意回覆陌生成員，這樣才知道社群架構是有效。</p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div>
+          <section class="answer-section">
+            <h2>3. 你會用什麼指標來判斷這個社群在三個月後是成功的？</h2>
+            <table class="indicator-table">
+              <thead>
+                <tr>
+                  <th>指標</th>
+                  <th>成功標準</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>核心訂戶啟動率</td>
+                  <td>社群啟動 14 天內，至少 60% 的核心訂戶完成一次有效參與</td>
+                </tr>
+                <tr>
+                  <td>有效重複參與率</td>
+                  <td>最近四週內，至少 40% 核心訂戶有兩週以上的有效參與</td>
+                </tr>
+                <tr>
+                  <td>核心訂戶滿意度</td>
+                  <td>核心訂戶滿意度平均 4 分以上（滿分 5 分），其中至少有 60% 的表示願意持續回來參與</td>
+                </tr>
+              </tbody>
+            </table>
+            <article class="answer-card">
+              <p>三個月後，我會先用第一批 50 至 100 位核心訂戶來判斷社群是否成功，而成功指標有以下三個：</p>
+              <p>第一，社群啟動 14 天內，至少 60% 的核心訂戶完成一次有效參與，例如自我介紹、提出問題、回覆討論或參與活動。</p>
+              <p>第二，最近四週內，至少 40% 核心訂戶有兩週以上的有效參與，代表社群開始形成回訪習慣。</p>
+              <p>第三，核心訂戶滿意度平均 4 分以上（滿分 5 分），其中至少有 60% 的表示願意持續回來參與，或認為這個社群提高了他們對《曼報 Pro》的續訂意願。</p>
+            </article>
+          </section>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span>竇孝文 Hsiao-Wen Tou｜《曼報 Pro》社群負責人</span>
+        <span>02 / 02</span>
+      </footer>
+    </section>
+</div>
+    </main>
+
+    <script>
+      function fitPages() {
+        const baseWidth = 1240;
+        const baseHeight = 1754;
+        const available = Math.max(320, window.innerWidth - 24);
+        const scale = Math.min(1, available / baseWidth);
+
+        document.querySelectorAll(".page-wrap").forEach((wrap) => {
+          wrap.style.width = baseWidth * scale + "px";
+          wrap.style.height = baseHeight * scale + "px";
+          const sheet = wrap.querySelector(".sheet");
+          if (sheet) sheet.style.transform = "scale(" + scale + ")";
+        });
+      }
+
+      window.addEventListener("resize", fitPages);
+      window.addEventListener("load", fitPages);
+      fitPages();
+    </script>
+  </body>
+</html>
